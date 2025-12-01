@@ -1,44 +1,59 @@
-A set of simple, standalone JavaScript utility functions that demonstrate core programming tasks — perfect for beginners learning JS fundamentals.
+JS Workshop 4 — Utility Functions
 
-🚀 Features
+This project contains a collection of JavaScript functions that solve common programming tasks such as factorial calculation, array operations, character counting, and filtering. Each function is simple, standalone, and includes console test examples.
 
-Calculate factorial of a number
+📌 Functions Overview
+1. factorial(n)
 
-Find the two largest numbers in an array
+Calculates the factorial of a number.
+Returns null for negative inputs.
 
-Reverse an array
+2. findTwoLargest(arr)
 
-Sum elements of an array or list
+Finds and returns the two largest unique numbers in an array.
 
-Count occurrences of a specific character in a string
+3. reverseArray(arr)
 
-Filter odd numbers from a list
+Reverses an array using the built-in .reverse() method.
 
-Extract unique values from an array
+4. sumArray(arr)
 
-Basic tests / examples demonstrating each function
+Sums all numeric values in an array and returns the total.
 
-📂 Structure
-JS-Workshop-4/
-│  
-├── [JavaScript files with utility functions]  
-├── [Test or example files]  
-├── index.html / reset.css / style.css — for demo or UI (if any)  
-└── README.md
+5. countCharacter(str, char)
 
-🧪 Getting Started
+Counts how many times a specific character appears in a string.
 
-Clone or download the repository
+6. filterOddNumbers(arr)
 
-Open the appropriate .js file(s) or run them in a JS runtime / browser console to test each function
+Returns a new array containing only odd numbers.
 
-Review the example usages to understand input-output behavior
+7. getUniqueElements(arr)
 
-📝 Example
-const numbers = [1, 2, 3, 4, 5];
-console.log(sum(numbers));         // 15
-console.log(factorial(5));        // 120
-console.log(reverseArray(numbers)); // [5, 4, 3, 2, 1]
+Removes duplicates from an array and returns unique values using Set.
 
+🧪 Example Usage
+console.log(factorial(5)); 
+// 120
 
-(and similar for other utilities — see source files for full usage)
+console.log(findTwoLargest([1, 10, 3, 7, 9]));
+// [10, 9]
+
+console.log(reverseArray([1, 2, 3, 4]));
+// [4, 3, 2, 1]
+
+console.log(sumArray([1, 2, 3, 4]));
+// 10
+
+console.log(countCharacter("a, b,s,a, e, f", "a"));
+// 2
+
+console.log(filterOddNumbers([1, 2, 3, 4, 5]));
+// [1, 3, 5]
+
+console.log(getUniqueElements([1, 2, 2, 3, 2, 4, 4, 5]));
+// [1, 2, 3, 4, 5]
+
+📘 About This Workshop
+
+This repository is part of a JavaScript practice workshop focused on writing clean, simple algorithmic functions and understanding fundamental operations with arrays and strings.
